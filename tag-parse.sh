@@ -8,7 +8,7 @@ then
 fi
 
 # search the text file for text enclosed by @@ and ~~ tags, add the interview id to each tagged section, strip @ and ~ characters, and write to new text file
-grep -Eo '@[^~]*~' $1 | sed -e "s/^/$3 /" | sed '/$/ G' | sed -E 's/@//' | sed -E 's/~//' >> $2
+echo $(cat $1) | grep -Eo '@[^~]*~' | sed -e "s/^/$3 /" | sed '/$/ G' | sed -E 's/@//' | sed -E 's/~//' >> $2
 
 # exit the script
 exit 0
