@@ -4,7 +4,6 @@ A simple bash script to copy tagged text from interview transcripts to a new fil
 ### use
 * create a table corresponding interviewee names to interview ids
 * do a find-and-replace on all existing '@' or '~' symbols
-<<<<<<< HEAD
 * read the transcripts and enclose each section of relevant text in an @~ pair
 * search the transcripts and make sure all tags are closed
 * run the script
