@@ -1,7 +1,7 @@
 #! /bin/bash
-
+# run with sh tag-parse.sh C:/Users/zripk/google-drive-local/school/mcgill-university/honours-thesis/data/coding/raw-text/c-raw-text.txt C:/Users/zripk/google-drive-local/school/mcgill-university/honours-thesis/data/coding/relevant-text/c-relevant-text.txt '[Participant C]'
 # if no command args are entered, print command line arg information to the terminal
-if [ $# -eq 0 ]
+if [ $# -lt 3 ]
 then
   echo "Command line arguments: input filename, output filename, interview id"
   exit 0
